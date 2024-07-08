@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9A1E98562C3BE70C00D6C466 /* Mini_Challenge_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E98552C3BE70C00D6C466 /* Mini_Challenge_3App.swift */; };
-		9A1E98582C3BE70C00D6C466 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E98572C3BE70C00D6C466 /* ContentView.swift */; };
 		9A1E985A2C3BE70E00D6C466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E98592C3BE70E00D6C466 /* Assets.xcassets */; };
 		9A1E985E2C3BE70E00D6C466 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E985D2C3BE70E00D6C466 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,11 +15,26 @@
 /* Begin PBXFileReference section */
 		9A1E98522C3BE70C00D6C466 /* Mini-Challenge-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini-Challenge-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1E98552C3BE70C00D6C466 /* Mini_Challenge_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini_Challenge_3App.swift; sourceTree = "<group>"; };
-		9A1E98572C3BE70C00D6C466 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9A1E98592C3BE70E00D6C466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A1E985B2C3BE70E00D6C466 /* Mini_Challenge_3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mini_Challenge_3.entitlements; sourceTree = "<group>"; };
 		9A1E985D2C3BE70E00D6C466 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9A38D1422C3BEC63002DD483 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ContentView.swift,
+			);
+			target = 9A1E98512C3BE70C00D6C466 /* Mini-Challenge-3 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9A38D13C2C3BEC26002DD483 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (9A38D1422C3BEC63002DD483 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+		9A38D13F2C3BEC43002DD483 /* ViewModels */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModels; sourceTree = "<group>"; };
+		9A38D1412C3BEC59002DD483 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9A1E984F2C3BE70C00D6C466 /* Frameworks */ = {
@@ -52,8 +66,10 @@
 		9A1E98542C3BE70C00D6C466 /* Mini-Challenge-3 */ = {
 			isa = PBXGroup;
 			children = (
+				9A38D13F2C3BEC43002DD483 /* ViewModels */,
+				9A38D1412C3BEC59002DD483 /* Models */,
+				9A38D13C2C3BEC26002DD483 /* Views */,
 				9A1E98552C3BE70C00D6C466 /* Mini_Challenge_3App.swift */,
-				9A1E98572C3BE70C00D6C466 /* ContentView.swift */,
 				9A1E98592C3BE70E00D6C466 /* Assets.xcassets */,
 				9A1E985B2C3BE70E00D6C466 /* Mini_Challenge_3.entitlements */,
 				9A1E985C2C3BE70E00D6C466 /* Preview Content */,
@@ -139,7 +155,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A1E98582C3BE70C00D6C466 /* ContentView.swift in Sources */,
 				9A1E98562C3BE70C00D6C466 /* Mini_Challenge_3App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
