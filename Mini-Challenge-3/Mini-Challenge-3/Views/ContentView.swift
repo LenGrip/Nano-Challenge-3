@@ -8,14 +8,49 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var navigateToBenchPressCalculatorView = false
+    @State var navigateToSquatCalculatorView = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack(alignment: .leading, spacing: 16) {
+                Button(action: {
+                    navigateToBenchPressCalculatorView = true
+                }) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 50)
+                            .foregroundColor(.green)
+                        
+                        Text("Bench Press")
+                            .foregroundColor(.white)
+                            .font(.system(size: 50, weight: .bold))
+                    }
+                }
+                
+                Button(action: {
+                    navigateToSquatCalculatorView = true
+                }) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 50)
+                            .foregroundColor(.green)
+                        
+                        Text("Squat")
+                            .foregroundColor(.white)
+                            .font(.system(size: 50, weight: .bold))
+                    }
+                }
+            }
+            .padding()
+            .navigationBarTitle("Workout")
         }
-        .padding()
+        .navigationDestination(isPresented: $navigateToBenchPressCalculatorView){
+            BenchPressCalculatorView()
+        }
+        .navigationDestination(isPresented: $navigateToSquatCalculatorView){
+            SquatCalculatorView()
+        }
+        
     }
 }
 

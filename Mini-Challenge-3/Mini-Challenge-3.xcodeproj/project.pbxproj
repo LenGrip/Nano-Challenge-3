@@ -24,7 +24,9 @@
 		9A38D1422C3BEC63002DD483 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				BenchPressCalculatorView.swift,
 				ContentView.swift,
+				SquatCalculatorView.swift,
 			);
 			target = 9A1E98512C3BE70C00D6C466 /* Mini-Challenge-3 */;
 		};
